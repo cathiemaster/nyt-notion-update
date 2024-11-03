@@ -3,9 +3,6 @@ import json
 import pandas as pd
 import constants
 
-NYT_BEST_BOOKS_FULL_PATH = '/Users/cmaster/Documents/python/notion-page-update/2024-nyt-best-books.csv'
-NYT_BEST_BOOKS = '2024-nyt-best-books.csv'
-
 def get_notion_block_children(block_id):
     URL = f"https://api.notion.com/v1/blocks/{block_id}/children"
 
