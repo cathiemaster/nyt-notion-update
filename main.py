@@ -103,7 +103,7 @@ def main():
 
     book_count = 0
 
-    nyt_best_books_df = pd.read_csv(NYT_BEST_BOOKS_FULL_PATH)
+    nyt_best_books_df = pd.read_csv(constants.NYT_BEST_BOOKS_FULL_PATH)
     nyt_best_books_df.columns = ['title', 'author']
     nyt_best_books_df = nyt_best_books_df[['title', 'author']].fillna("")
 
